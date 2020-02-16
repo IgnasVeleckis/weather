@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/fontawesome.min.css" />
+    <link rel="stylesheet" href="style/all.min.css" />
+
+    <script src="city-list/city.list.json"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>weather-app</h1>
+    <div class="select">
+        <label for="cities">Cities</label>
+        <select id="cities">
+            <option value="707860">Hurzuf</option>
+            <option value="519188">Novinki</option>
+        </select>
+    </div>
+    <div class="weather-container">
+        City: <span id="city"> </span>,
+        <span id="country"></span>
+        <br> Weather: <span id="weather"></span>
+        <br> temp: <span id="temp"></span>
+        <br> temp feels like: <span id="feels_like"></span>
+        <br> humidity: <span id="humidity"></span>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
