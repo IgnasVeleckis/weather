@@ -1,0 +1,12 @@
+.xheader {
+    background-color: $base-color;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    .main_title {
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: $text-color;
+        margin-top: 1.25rem;
+    }
+}

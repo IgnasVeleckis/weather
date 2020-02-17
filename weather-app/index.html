@@ -5,31 +5,81 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/fontawesome.min.css" />
-    <link rel="stylesheet" href="style/all.min.css" />
-
-
+    <!-- <link rel="stylesheet" href="style/fontawesome.min.css" />
+    <link rel="stylesheet" href="style/all.min.css" /> -->
     <script src="city-list/city.list.json"></script>
     <title>Document</title>
 </head>
 
 <body>
-    <h1>weather-app</h1>
-    <div class="select">
-        <label for="cities">City : </label>
-        <select id="cities">
-            
-        </select>
-    </div>
-    <div class="weather-container">
-        City: <span id="city"> </span>,
-        <span id="country"></span>
-        <br> Weather: <span id="weather"></span>
-        <br> temp: <span id="temp"></span>
-        <br> temp feels like: <span id="feels_like"></span>
-        <br> humidity: <span id="humidity"></span>
+    <header class="xheader">
+        <p class="main_title">weather-app</p>
+    </header>
+
+
+
+
+
+    <div class="xcontent">
+
+
+        <div class="select">
+            <!-- <label for="cities">City: </label> -->
+            <select id="cities"></select>
+        </div>
+
+
+        <div class="weather_data">
+
+
+
+            <div class="city_data">
+                <div class="city_name">
+                    <span id="city"></span>
+                    <p>, </p>
+                    <span id="country"></span>
+                </div>
+
+                <div class="date">
+                    <span class="week_day">Monday</span>,
+                    <span class="day_time">16:00</span>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="weather_forecast">
+                <span id="weather"></span>
+                <div class="temperature">
+                    <span id="temp"></span>
+                    <p>F</p>
+                    <div class="feels">
+                        (feels like: <span id="feels_like"></span>
+                        <p>F</p>)
+                    </div>
+                </div>
+                <div class="humidity">
+                    <p>humidity:</p>
+                    <span id="humidity"></span>
+                    <p>%</p>
+                </div>
+            </div>
+
+        </div>
+
 
     </div>
+
+
+
+
+    <footer class="xfooter">
+        <a href="#">API</a>
+        <a href="#">Other projects</a>
+        <a href="#">Contacts</a>
+    </footer>
 
     <script src="script.js"></script>
 </body>

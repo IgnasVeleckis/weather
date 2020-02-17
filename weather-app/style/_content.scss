@@ -1,0 +1,24 @@
+.xcontent {
+    .select {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+    }
+    .weather_data {
+        .city_data {
+            .city_name {
+                display: flex;
+            }
+            .date {}
+        }
+        .weather_forecast {
+            border: 1px solid red;
+            .temperature {
+                display: flex;
+                .feels {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

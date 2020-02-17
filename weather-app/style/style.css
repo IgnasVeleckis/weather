@@ -1,1 +1,57 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.xheader {
+  background-color: #92dafc;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.xheader .main_title {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ff7300;
+  margin-top: 1.25rem;
+}
+
+.xcontent .select {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.xcontent .weather_data .city_data .city_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.xcontent .weather_data .weather_forecast {
+  border: 1px solid red;
+}
+
+.xcontent .weather_data .weather_forecast .temperature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.xcontent .weather_data .weather_forecast .temperature .feels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=style.css.map */
