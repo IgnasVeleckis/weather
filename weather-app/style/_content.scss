@@ -1,22 +1,120 @@
 .xcontent {
+    background-color: $back-color;
+    height: 65%;
     .select {
-        margin: 2rem 0;
         display: flex;
         justify-content: center;
+        select {
+            border: none;
+            font-size: 1rem;
+            background-color: transparent;
+            color: rgb(0, 0, 0);
+            appearance: none;
+        }
     }
     .weather_data {
         .city_data {
+            margin-bottom: 2rem;
             .city_name {
                 display: flex;
+                justify-content: center;
+                span {
+                    font-size: 1.7rem;
+                    color: $text-primary;
+                    font-weight: 500;
+                }
+                p {
+                    margin: 0 .3rem 0 0;
+                    font-size: 1.7rem;
+                    color: $text-primary;
+                }
             }
-            .date {}
+            .date {
+                display: flex;
+                justify-content: center;
+                font-size: 1.2rem;
+                color: $text-secondary;
+                font-weight: 100;
+                /* p {
+                    font-size: 1.2rem;
+                    color: $text-primary;
+                    font-weight: 100;
+                    margin-right: .5rem;
+                } */
+                span.day_time {
+                    margin-left: .5rem;
+                }
+            }
         }
         .weather_forecast {
-            border: 1px solid red;
             .temperature {
                 display: flex;
-                .feels {
+                justify-content: center;
+                .row {
+                    width: 22%;
                     display: flex;
+                    justify-content: center;
+                    div.icon {
+                        font-size: 3rem;
+                        text-align: center;
+                        margin-top: 20px;
+                        color: yellow;
+                    }
+                    span#temp {
+                        font-size: 5rem;
+                        margin-left: 5px;
+                        color: $text-primary;
+                        font-weight: 100;
+                    }
+                    span.degree_sign {
+                        font-size: 5rem;
+                        margin-left: 0px;
+                        color: $text-primary;
+                        font-weight: 100;
+                    }
+                    div.degree_buttons {
+                        margin-top: 5px;
+                        margin-left: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        button {
+                            background-color: transparent;
+                            border: none;
+                            font-size: 2rem;
+                            color: $text-secondary;
+                            &.c {
+                                margin-left: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+            span#weather {
+                color: $text-secondary;
+                display: flex;
+                justify-content: center;
+                font-size: 1.5rem;
+            }
+        }
+        .sub_info {
+            display: flex;
+            justify-content: center;
+            .row {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem;
+                div {
+                    display: flex;
+                    span {
+                        color: $text-secondary;
+                        font-size: 14px;
+                    }
+                    p {
+                        margin: 0;
+                        color: $text-secondary;
+                        font-size: 14px;
+                        margin-right: 5px;
+                    }
                 }
             }
         }

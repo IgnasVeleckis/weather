@@ -5,28 +5,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style/style.css" />
-    <!-- <link rel="stylesheet" href="style/fontawesome.min.css" />
-    <link rel="stylesheet" href="style/all.min.css" /> -->
+    <link rel="stylesheet" href="style/fontawesome.min.css" />
+    <link rel="stylesheet" href="style/all.min.css" />
     <script src="city-list/city.list.json"></script>
     <title>Document</title>
 </head>
 
 <body>
+
     <header class="xheader">
-        <p class="main_title">weather-app</p>
+        <div class="start">
+            <button class="info">
+                    <i class="fas fa-info"></i>
+                </button>
+        </div>
+
+
+
+        <div class="middle">
+            <div class="select">
+                <select id="cities"></select>
+            </div>
+        </div>
+
+
+
+        <div class="end">
+            <div class="language">
+                <button class="en">EN</button>
+                <p class="divide">|</p>
+                <button class="lt">LT</button>
+            </div>
+        </div>
     </header>
 
 
-
-
+    <div class="filler"></div>
 
     <div class="xcontent">
 
 
-        <div class="select">
-            <!-- <label for="cities">City: </label> -->
-            <select id="cities"></select>
-        </div>
+
 
 
         <div class="weather_data">
@@ -35,14 +54,17 @@
 
             <div class="city_data">
                 <div class="city_name">
+
                     <span id="city"></span>
                     <p>, </p>
                     <span id="country"></span>
                 </div>
 
                 <div class="date">
-                    <span class="week_day">Monday</span>,
-                    <span class="day_time">16:00</span>
+                    <span class="week_day"></span>,
+
+
+                    <span class="day_time"></span>
                 </div>
             </div>
 
@@ -51,21 +73,64 @@
 
 
             <div class="weather_forecast">
-                <span id="weather"></span>
+
                 <div class="temperature">
-                    <span id="temp"></span>
-                    <p>F</p>
-                    <div class="feels">
-                        (feels like: <span id="feels_like"></span>
-                        <p>F</p>)
+                    <div class="row">
+                        <div class="icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <span id="temp"></span>
+                        <span class="degree_sign"> &#176;</span>
+                        <div class="degree_buttons">
+                            <button class="f">F</button>
+                            <button class="c">C</button>
+                        </div>
                     </div>
                 </div>
-                <div class="humidity">
-                    <p>humidity:</p>
-                    <span id="humidity"></span>
-                    <p>%</p>
+
+
+                <span id="weather"></span>
+
+
+
+                <div class="sub_info">
+                    <div class="row">
+                        <div class="humidity_string">
+                            <p>Humidity</p>
+                            <span id="humidity"></span>
+                            <p>%</p>
+                        </div>
+                        <div class="wind_speed_string">
+                            <p>Wind speed</p>
+                            <span id="wind_speed"></span>
+                            <p>m/s</p>
+
+                        </div>
+                        <div class="pressure_string">
+                            <p>Pressure</p>
+                            <span id="pressure"></span>
+                            <p>mmHg</p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="visibility_string">
+                            <p>Visibility</p>
+                            <span id="visibility"></span>
+                            <p>m</p>
+                        </div>
+                        <div class="feels_like_string">
+                            <p>Feels like</p>
+                            <span id="feels_like"></span>
+                            <span class="degree_sign"> &#176;</span>
+
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
+
 
         </div>
 

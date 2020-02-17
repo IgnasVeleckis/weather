@@ -1,13 +1,53 @@
 html,
-body,
-* {
+body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("../assets/weather.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #5997f3;
 }
 
 .xheader {
-  background-color: #92dafc;
-  height: 5rem;
+  background-color: transparent;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.xheader .start {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.2rem;
+}
+
+.xheader .start button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.xheader .middle {
+  width: 40%;
+  margin-top: .4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,42 +56,271 @@ body,
           justify-content: center;
 }
 
-.xheader .main_title {
-  font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ff7300;
-  margin-top: 1.25rem;
+.xheader .middle div.select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.xheader .middle div.select select {
+  border: none;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: white;
+  width: 70%;
+}
+
+.xheader .middle div.select select::focus {
+  border: none;
+}
+
+.xheader .middle div.select select option {
+  color: black;
+  background: transparent;
+  border-radius: 10px;
+}
+
+.xheader .end {
+  width: 20%;
+  margin-top: 1.4rem;
+}
+
+.xheader .end div.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+}
+
+.xheader .end div.language p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.xheader .end div.language p.divide {
+  margin: 0 .3rem;
+}
+
+.xheader .end div.language button {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.4rem;
+  background-color: transparent;
+  border: none;
+}
+
+.xheader .end div.language button:focus {
+  border: none;
+}
+
+.xcontent {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 65%;
 }
 
 .xcontent .select {
-  margin: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.xcontent .select select {
+  border: none;
+  font-size: 1rem;
+  background-color: transparent;
+  color: black;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.xcontent .weather_data .city_data {
+  margin-bottom: 2rem;
 }
 
 .xcontent .weather_data .city_data .city_name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.xcontent .weather_data .weather_forecast {
-  border: 1px solid red;
+.xcontent .weather_data .city_data .city_name span {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 500;
+}
+
+.xcontent .weather_data .city_data .city_name p {
+  margin: 0 .3rem 0 0;
+  font-size: 1.7rem;
+  color: white;
+}
+
+.xcontent .weather_data .city_data .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+  /* p {
+                    font-size: 1.2rem;
+                    color: $text-primary;
+                    font-weight: 100;
+                    margin-right: .5rem;
+                } */
+}
+
+.xcontent .weather_data .city_data .date span.day_time {
+  margin-left: .5rem;
 }
 
 .xcontent .weather_data .weather_forecast .temperature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.xcontent .weather_data .weather_forecast .temperature .feels {
+.xcontent .weather_data .weather_forecast .temperature .row {
+  width: 22%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.xcontent .weather_data .weather_forecast .temperature .row div.icon {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+  color: yellow;
+}
+
+.xcontent .weather_data .weather_forecast .temperature .row span#temp {
+  font-size: 5rem;
+  margin-left: 5px;
+  color: white;
+  font-weight: 100;
+}
+
+.xcontent .weather_data .weather_forecast .temperature .row span.degree_sign {
+  font-size: 5rem;
+  margin-left: 0px;
+  color: white;
+  font-weight: 100;
+}
+
+.xcontent .weather_data .weather_forecast .temperature .row div.degree_buttons {
+  margin-top: 5px;
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.xcontent .weather_data .weather_forecast .temperature .row div.degree_buttons button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.xcontent .weather_data .weather_forecast .temperature .row div.degree_buttons button.c {
+  margin-left: 2px;
+}
+
+.xcontent .weather_data .weather_forecast span#weather {
+  color: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5rem;
+}
+
+.xcontent .weather_data .sub_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.xcontent .weather_data .sub_info .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+}
+
+.xcontent .weather_data .sub_info .row div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.xcontent .weather_data .sub_info .row div span {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+}
+
+.xcontent .weather_data .sub_info .row div p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.xfooter {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.xfooter a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.filler {
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=style.css.map */
