@@ -14,6 +14,7 @@
             border: none;
             font-size: 1.5rem;
             color: $text-secondary;
+            cursor: pointer;
         }
     }
     .middle {
@@ -32,6 +33,7 @@
                 width: 70%;
                 border-bottom: 2px solid $text-secondary;
                 height: 2rem;
+                cursor: pointer;
                 &::focus {
                     border: none;
                 }
@@ -64,6 +66,7 @@
                 font-size: 1.4rem;
                 background-color: transparent;
                 border: none;
+                cursor: pointer;
                 &:focus {
                     border: none;
                 }

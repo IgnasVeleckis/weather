@@ -43,6 +43,7 @@ body {
   border: none;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
 }
 
 .xheader .middle {
@@ -73,6 +74,7 @@ body {
   width: 70%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.7);
   height: 2rem;
+  cursor: pointer;
 }
 
 .xheader .middle div.select select::focus {
@@ -116,6 +118,7 @@ body {
   font-size: 1.4rem;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .xheader .end div.language button:focus {
@@ -339,22 +342,41 @@ body {
 div.xpopup {
   position: absolute;
   z-index: 9999;
-  left: 50%;
-  margin-left: -30%;
-  top: 40%;
-  margin-top: -20%;
-  width: 50%;
-  height: 60%;
-  border: 1px solid black;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
+  text-align: center;
+}
+
+div.xpopup div.popup .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.xpopup p.pupup_text_me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.xpopup .api {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem 20%;
 }
 
 div.xpopup .api a {
@@ -362,7 +384,23 @@ div.xpopup .api a {
   margin: 1rem;
 }
 
-.disable {
+div.xpopup p.pupup_text_about {
+  margin: 0 2rem;
+}
+
+div.xpopup button {
+  background-color: transparent;
+  border: none;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+div.xpopup button i {
+  color: white;
+  font-size: 2rem;
+}
+
+div.xpopup.disable {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
