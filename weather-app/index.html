@@ -15,9 +15,9 @@
 
     <header class="xheader">
         <div class="start">
-            <button class="info">
-                    <i class="fas fa-info"></i>
-                </button>
+            <button class="info" onclick="popup()">
+                <i class="fas fa-info"></i>
+            </button>
         </div>
 
 
@@ -28,15 +28,17 @@
             </div>
         </div>
 
-
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 
         <div class="end">
             <div class="language">
-                <button class="en">EN</button>
+                <button class="en" value="en" onclick="languageChange('en')">EN</button>
                 <p class="divide">|</p>
-                <button class="lt">LT</button>
+                <button class="lt activeLanguage" value="lt" onclick="languageChange('lt')">LT</button>
             </div>
         </div>
+
+        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     </header>
 
 
@@ -77,14 +79,20 @@
                 <div class="temperature">
                     <div class="row">
                         <div class="icon">
-                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-sun" id="weather_icon"></i>
                         </div>
                         <span id="temp"></span>
                         <span class="degree_sign"> &#176;</span>
+                        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+
                         <div class="degree_buttons">
-                            <button class="f">F</button>
-                            <button class="c">C</button>
+                            <button class="f" value="Fahrenheit" onclick="unitChange('f')">F</button>
+                            <button class="c activeUnits" value="metric" onclick="unitChange('c')">C</button>
                         </div>
+
+
+
+                        <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
                     </div>
                 </div>
 
@@ -96,31 +104,32 @@
                 <div class="sub_info">
                     <div class="row">
                         <div class="humidity_string">
-                            <p>Humidity</p>
+                            <p class="humidity_text">Humidity</p>
                             <span id="humidity"></span>
                             <p>%</p>
                         </div>
                         <div class="wind_speed_string">
-                            <p>Wind speed</p>
+                            <p class="wind_speed_text">Wind speed</p>
                             <span id="wind_speed"></span>
                             <p>m/s</p>
 
                         </div>
+
+                    </div>
+                    <div class="row">
+                        <!-- <div class="visibility_string">
+                            <p class="visibility_text">Visibility</p>
+                            <span id="visibility"></span>
+                            <p>m</p>
+                        </div> -->
                         <div class="pressure_string">
-                            <p>Pressure</p>
+                            <p class="pressure_text">Pressure</p>
                             <span id="pressure"></span>
                             <p>mmHg</p>
 
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="visibility_string">
-                            <p>Visibility</p>
-                            <span id="visibility"></span>
-                            <p>m</p>
-                        </div>
                         <div class="feels_like_string">
-                            <p>Feels like</p>
+                            <p class="feels_like_text">Feels like</p>
                             <span id="feels_like"></span>
                             <span class="degree_sign"> &#176;</span>
 
@@ -141,10 +150,26 @@
 
 
     <footer class="xfooter">
-        <a href="#">API</a>
-        <a href="#">Other projects</a>
-        <a href="#">Contacts</a>
+        <a class="footer_link_api" href="#">API</a>
+        <a class="footer_link_other" href="#">Other projects</a>
+        <a class="footer_link_contact" href="#">Contacts</a>
     </footer>
+
+
+
+
+    <div class="xpopup disable">
+        <h1 class="pupup_title"></h1>
+        <p class="pupup_text_me"></p>
+        <div class="api">
+            <p class="pupup_text_link"> </p>
+            <a href="https://openweathermap.org/">https://openweathermap.org</a>
+        </div>
+        <p class="pupup_text_about">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eum porro ipsa ratione et nobis saepe dolores quibusdam. Rem ex ea aperiam labore harum earum numquam iusto odit in possimus libero aliquam modi est, consequuntur pariatur perferendis facere
+            reiciendis ducimus quidem vitae eum quas maiores amet. Beatae facilis quis ut expedita, voluptate iusto amet pariatur enim, ad sequi hic corporis.
+        </p>
+    </div>
 
     <script src="script.js"></script>
 </body>

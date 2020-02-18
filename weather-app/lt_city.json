@@ -1,40 +1,4 @@
 [{
-        "id": 598392,
-        "name": "Karmelava",
-        "country": "LT",
-        "coord": {
-            "lon": 24.066669,
-            "lat": 54.966671
-        }
-    },
-    {
-        "id": 598316,
-        "name": "Kaunas",
-        "country": "LT",
-        "coord": {
-            "lon": 23.9,
-            "lat": 54.900002
-        }
-    },
-    {
-        "id": 6618486,
-        "name": "Dainava",
-        "country": "LT",
-        "coord": {
-            "lon": 23.968309,
-            "lat": 54.915249
-        }
-    },
-    {
-        "id": 599570,
-        "name": "Freda",
-        "country": "LT",
-        "coord": {
-            "lon": 23.9,
-            "lat": 54.900002
-        }
-    },
-    {
         "id": 593116,
         "name": "Vilnius",
         "country": "LT",
@@ -44,21 +8,12 @@
         }
     },
     {
-        "id": 6955406,
-        "name": "Užupis",
+        "id": 598316,
+        "name": "Kaunas",
         "country": "LT",
         "coord": {
-            "lon": 25.299971,
-            "lat": 54.681519
-        }
-    },
-    {
-        "id": 594739,
-        "name": "Šiauliai",
-        "country": "LT",
-        "coord": {
-            "lon": 23.316669,
-            "lat": 55.933331
+            "lon": 23.9,
+            "lat": 54.900002
         }
     },
     {
@@ -80,6 +35,81 @@
         }
     },
     {
+        "id": 593733,
+        "name": "Ukmergė",
+        "country": "LT",
+        "coord": {
+            "lon": 24.75,
+            "lat": 55.25
+        }
+    },
+    {
+        "id": 594739,
+        "name": "Šiauliai",
+        "country": "LT",
+        "coord": {
+            "lon": 23.316669,
+            "lat": 55.933331
+        }
+    },
+    {
+        "id": 596128,
+        "name": "Panevežys",
+        "country": "LT",
+        "coord": {
+            "lon": 24.35,
+            "lat": 55.73333
+        }
+    },
+    {
+        "id": 597231,
+        "name": "Marijampole",
+        "country": "LT",
+        "coord": {
+            "lon": 23.35,
+            "lat": 54.566669
+        }
+    },
+    {
+        "id": 598392,
+        "name": "Karmelava",
+        "country": "LT",
+        "coord": {
+            "lon": 24.066669,
+            "lat": 54.966671
+        }
+    },
+    {
+        "id": 6618486,
+        "name": "Dainava",
+        "country": "LT",
+        "coord": {
+            "lon": 23.968309,
+            "lat": 54.915249
+        }
+    },
+    {
+        "id": 599570,
+        "name": "Freda",
+        "country": "LT",
+        "coord": {
+            "lon": 23.9,
+            "lat": 54.900002
+        }
+    },
+    {
+        "id": 6955406,
+        "name": "Užupis",
+        "country": "LT",
+        "coord": {
+            "lon": 25.299971,
+            "lat": 54.681519
+        }
+    },
+
+
+
+    {
         "id": 595213,
         "name": "Rokiskis",
         "country": "LT",
@@ -97,15 +127,7 @@
             "lat": 55.5
         }
     },
-    {
-        "id": 596128,
-        "name": "Panevežys",
-        "country": "LT",
-        "coord": {
-            "lon": 24.35,
-            "lat": 55.73333
-        }
-    },
+
     {
         "id": 594805,
         "name": "Senosios Kietaviškės",
@@ -232,15 +254,7 @@
             "lat": 55.23333
         }
     },
-    {
-        "id": 597231,
-        "name": "Marijampole",
-        "country": "LT",
-        "coord": {
-            "lon": 23.35,
-            "lat": 54.566669
-        }
-    },
+
     {
         "id": 593063,
         "name": "Visaginas",
@@ -259,15 +273,7 @@
             "lat": 55.816669
         }
     },
-    {
-        "id": 593733,
-        "name": "Ukmergė",
-        "country": "LT",
-        "coord": {
-            "lon": 24.75,
-            "lat": 55.25
-        }
-    },
+
     {
         "id": 597596,
         "name": "Lazdijai",

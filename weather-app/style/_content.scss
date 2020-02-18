@@ -58,7 +58,7 @@
                         font-size: 3rem;
                         text-align: center;
                         margin-top: 20px;
-                        color: yellow;
+                        color: $text-primary;
                     }
                     span#temp {
                         font-size: 5rem;
@@ -84,6 +84,10 @@
                             color: $text-secondary;
                             &.c {
                                 margin-left: 2px;
+                            }
+                            &.activeUnits {
+                                color: $text-primary;
+                                font-weight: 700;
                             }
                         }
                     }

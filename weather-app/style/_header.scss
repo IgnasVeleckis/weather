@@ -18,7 +18,7 @@
     }
     .middle {
         width: 40%;
-        margin-top: .4rem;
+        margin-top: 1rem;
         display: flex;
         justify-content: center;
         div.select {
@@ -30,6 +30,8 @@
                 background-color: transparent;
                 color: $text-primary;
                 width: 70%;
+                border-bottom: 2px solid $text-secondary;
+                height: 2rem;
                 &::focus {
                     border: none;
                 }
@@ -64,6 +66,10 @@
                 border: none;
                 &:focus {
                     border: none;
+                }
+                &.activeLanguage {
+                    color: $text-primary;
+                    font-weight: 700;
                 }
             }
         }
